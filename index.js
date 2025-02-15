@@ -163,3 +163,24 @@ for(const playerObj of keyOfObject){
 for(const [key, {name, position, ...restOfObject}] of entriesOfObject){
   console.log(key, name, position, restOfObject);
 };
+console.log('-----------End Of Object---------------')
+
+//Maps
+const simpleMap = new Map ([
+  ['Question', 'Who is the best NHl player ever?'],
+  [1, 'John Scott'],
+  [2, 'Wayne Gretzky'],
+  [3, 'Matti Höylä'],
+  ['correct', 'Wayne Gretzky'],
+  [true, 'You guessed right!'],
+  [false, 'Please try again 😑']
+]);
+
+console.log(simpleMap.get('Question'));
+for(const [key, value] of simpleMap){
+  if(typeof key === 'number'){
+    console.log(`Answer ${key}: value ${value}`);
+  }
+}
+const answer = prompt(simpleMap.get('Question'));
+console.log(simpleMap.get(answer === simpleMap.get('correct')));

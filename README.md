@@ -8,9 +8,4 @@ This project demonstrates the use of objects and arrays in JavaScript by working
 ✅ Demonstrates optional chaining (?.) and nullish coalescing (??)
 ✅ Implements Set and Map data structures for handling duplicate values
 ✅ Allows usage of Object.keys(), Object.values(), Object.entries()
-
-🚀 Usage Instructions
-1️⃣ Clone this repository:
-
-git clone https://github.com/KayttajaNimi/Hockey-Players-Data.git
-cd Hockey-Players-Data
+✅ Uses map to make simple quizs app
