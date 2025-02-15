@@ -164,8 +164,6 @@ for(const [key, {name, position, ...restOfObject}] of entriesOfObject){
   console.log(key, name, position, restOfObject);
 };
 console.log('-----------End Of Object---------------')
-
-//Maps
 const simpleMap = new Map ([
   ['Question', 'Who is the best NHl player ever?'],
   [1, 'John Scott'],
@@ -182,5 +180,5 @@ for(const [key, value] of simpleMap){
     console.log(`Answer ${key}: value ${value}`);
   }
 }
-const answer = prompt(simpleMap.get('Question'));
+const answer = prompt(`${simpleMap.get('Question')}, Write your answer!`);
 console.log(simpleMap.get(answer === simpleMap.get('correct')));
